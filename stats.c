@@ -1,4 +1,5 @@
 #include "stats.h"
+#include "math.h"
 
 static float Stats_Average(const float* numberset, int setlength)
 {
