@@ -1,6 +1,6 @@
 #include "stats.h"
 
-float Stats_Average(const float* numberset, int setlength)
+static float Stats_Average(const float* numberset, int setlength)
 {
     float average = 0;
     float sum = 0;
@@ -17,7 +17,7 @@ float Stats_Average(const float* numberset, int setlength)
     
 }
 
-float Stats_MinValue(const float* numberset, int setlength)
+static float Stats_MinValue(const float* numberset, int setlength)
 {
     float Min_value = numberset[0];
     int index;
@@ -32,7 +32,7 @@ float Stats_MinValue(const float* numberset, int setlength)
     
 }
 
-float Stats_MaxValue(const float* numberset, int setlength)
+static float Stats_MaxValue(const float* numberset, int setlength)
 {
     float Max_Value = numberset[0];
     int index;
