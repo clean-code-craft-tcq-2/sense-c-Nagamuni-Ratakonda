@@ -30,6 +30,8 @@ static float Stats_MinValue(const float* numberset, int setlength)
         }
     }
     
+    return Min_value;
+    
 }
 
 static float Stats_MaxValue(const float* numberset, int setlength)
@@ -54,7 +56,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     s.min = 0;
     s.max = 0;
     
-    if((NULL_PTR != numberset) && (0 != setlength))
+    if((0 != numberset) && (0 != setlength))
     {
         s.average = Stats_Average(numberset,setlength);
         s.min = Stats_MinValue(numberset,setlength);
