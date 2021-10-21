@@ -62,6 +62,12 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
         s.min = Stats_MinValue(numberset,setlength);
         s.max = Stats_MaxValue(numberset,setlength);
     }
+    else
+    {
+        s.average = NAN;
+        s.min = NAN;
+        s.max = NAN;
+    }
     
     return s;
 }
